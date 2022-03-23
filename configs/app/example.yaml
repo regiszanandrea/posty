@@ -1,0 +1,18 @@
+app:
+  name: posty
+  fiber:
+    address: 0.0.0.0:3000
+    disable-startup-message: true
+  mongodb:
+    host: mongo
+    user: root
+    password: root
+    port: 27017
+    database: posty
+    user-collection: users
+    follower-collection: followers
+    post-collection: posts
+  posts:
+    maximum-per-day: 5
+    list-user-posts-limit: 5
+    feed-posts-limit: 10
