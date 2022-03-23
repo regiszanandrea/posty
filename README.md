@@ -48,21 +48,6 @@ cp configs/app/example.yaml configs/app/testing.yaml
 
 - Every change should generate a Pull request to main branch
 
-# Planning
-
-Questions to Product Manager:
-- Does quoted-posts are also be returned on this new page? 
-- Does this should increment posts count?
-- Should this be considered a post for the 5 posts per day restriction? 
-- Should exist a restriction of the number of these posts per day? 
-- Does a QA Engineer should be involved? to make a "Three Amigos" meeting, with his help
-we could define better test scenarios 
-
-Changes on the application:
-- Change the endpoint to get user's posts that don't have `parent_id`
-- Add a new repository and service method, and an endpoint to get all posts from user
-- Should be added an index to an `content` field on posts collection, for a full-text search, as "@" is a reply. 
-
 # Critique
 
 Things that could be improved:
